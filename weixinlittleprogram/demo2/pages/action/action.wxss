@@ -1,5 +1,0 @@
-/* pages/action/action.wxss */
-
-.container{padding: 10px;}
-.action-container,.modal-container{width: 100%;}
-.modal-container button{margin:10px 0;}

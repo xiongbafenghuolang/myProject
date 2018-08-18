@@ -1,5 +1,0 @@
-<template name="mytemplate" >
-  <view style="width:200rpx;height:100rpx;border:1px solid #ff0000;">{{userName}}</view>
-  <text>{{tel}}</text>
-  <image src="{{imgUrl}}"></image>
-</template>
