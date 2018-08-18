@@ -1,0 +1,24 @@
+/* pages/test/test.wxss */
+.container-form {padding: 10px;}
+.text-class {font-size: 14px}
+.input-class {
+  height: 40px;
+  margin-top: 10px;
+  border: 1px solid #dcdcdc;
+  text-indent: 16px;
+}
+.selector-content picker {
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  text-align: center;
+  color: #1a1a1a;
+  background-color: #dcdcdc;
+}
+.form-radio {margin: 10px 0;}
+.form-button button {margin: 10px 0;}
+.loading-button {
+  color: #fff!important;
+  background-color: #1a1a1a!important;
+  opacity: 0.7;
+  }

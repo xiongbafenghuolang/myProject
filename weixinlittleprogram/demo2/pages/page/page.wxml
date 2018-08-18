@@ -1,0 +1,47 @@
+<import src="/pages/template/template.wxml" />
+<include src="/pages/tab/tab.wxml" />
+<view class="content-list">
+  <view class="list-item">
+    <image src="../../images/1.png" class="list-left" />
+    <view class="list-right">
+      <view class="title">
+        <text></text>
+      </view>
+      <view class="time">2018-05-03</view>
+    </view>
+  </view>
+</view>
+<view>
+  <template is="mytemplate" data="{{...item}}"></template>
+</view>
+
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+    <view class="order">消息通知0000</view>
+    <view class="detail">
+      <text>></text>
+    </view>
+  </view>
+  <view class="xian"></view>
+  <view class="hr"></view>
+  <view class="item">
+    <view class="order">消息通知111</view>
+    <view class="detail">
+      <text>></text>
+    </view>
+  </view>
+  <view class="xian"></view>
+  <view class="hr"></view>
+  <view class="item">
+    <view class="order">消息通知2222</view>
+    <view class="detail">
+      <text>></text>
+    </view>
+  </view>
+  <view class="xian"></view>
+</view>
+<view class="bottom-textarea">
+  <!-- <textarea style="padding-bottom:{{paddingBottom}}" show-confirm-bar="{{false}}" value="" placeholder="请输入您想说的话" maxlength="-1" fixed="true" cursor-spacing="500px" cursor="200" selection-start="5" selection-end="20" adjust-position="{{true}}" confirm-type="done" bindfocus="onFocus" ></textarea> -->
+  <input class="chat-input" type="emoji" bindinput="bindChange" confirm-type="done" value='{{input}}' placeholder="" />
+</view>

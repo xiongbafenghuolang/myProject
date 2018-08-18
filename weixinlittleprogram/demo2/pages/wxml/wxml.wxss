@@ -1,0 +1,10 @@
+/* pages/wxml/wxml.wxss */
+.red{color: red;}
+.green{color: green;}
+.background-image {
+  width:200px;
+  height:200px;
+  background-image: url(http://y1.ifengimg.com/a/2015_42/4c16960a2559dcf.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  }

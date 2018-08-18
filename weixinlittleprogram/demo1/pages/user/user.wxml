@@ -1,0 +1,3 @@
+<!--pages/user/user.wxml-->
+<text>pages/user/user.wxml</text>
+<view>用户名：{{username}}</view>

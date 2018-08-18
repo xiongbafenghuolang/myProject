@@ -1,0 +1,38 @@
+<!--pages/wxml/wxml.wxml-->
+<import src="/pages/template/template.wxml" />
+<template is="mytemplate" data="{{...data}}"></template>
+<view class="container-wxml">
+
+  <template name="even">
+    <view class="red">even水电费健康是电话费</view>
+  </template>
+
+  <template name="odd">
+    <view class="green">odd水电费健康是电话费</view>
+  </template>
+  <block wx:for="{{[1,2,3,4,5,6,7]}}">
+    <template is="{{item % 2 ==0 ? 'even' : 'odd'}}" data="{{item:item}}"></template>
+  </block>
+  <view>{{array[0].msg}}</view>
+  <view>{{array[1].msg}}</view>
+  <block wx:for="{{['aaa', 'bbb', 'ccc']}}">
+    <view> {{index}}: </view>
+    <view> {{item}} </view>
+  </block>
+</view>
+<view>
+  <image src="/images/1.png"></image>
+  <image src="../../images/2.png"></image>
+</view>
+<view class="background-image"></view>
+<input type="text" style="width:500rpx;height:40rpx;margin:20rpx;border:1px solid #dcdcdc;" placeholder='hahhhhhh' placeholder-style="color:#666666;margin-left:10rpx;" cursor-spacing="100px"></input>
+
+<icon type="success_no_circle"></icon>
+<icon type="info"></icon>
+<icon type="warn"></icon>
+<icon type="cancel"></icon>
+<icon type="info"></icon>
+<icon type="waiting"></icon>
+<icon type="download"></icon>
+<icon type="search"></icon>
+<icon type="clear"></icon>

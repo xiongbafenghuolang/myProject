@@ -1,0 +1,12 @@
+/* pages/login/login.wxss */
+.mcontainer{
+  width: 100%;
+  padding: 0;
+}
+.item{
+  width: 100%;
+  align-items: center;
+}
+.item .image{
+  margin: 0 auto;
+}

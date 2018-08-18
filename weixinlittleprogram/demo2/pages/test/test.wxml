@@ -1,0 +1,62 @@
+<!--pages/test/test.wxml-->
+<view class="container-form">
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view>
+      <text>checkbox</text>
+      <checkbox-group>
+        <view>
+          <label><checkbox value="唱歌" checked/>唱歌</label>
+        </view>
+        <view>
+          <label><checkbox value="跳舞"/>跳舞</label>
+        </view>
+      </checkbox-group>
+    </view>
+    <view>
+      <input class="input-class" name="myinput" type="text" placeholder="请输入您的用户名" placeholder-class="text-class" placeholder-style="color:#dcdcdc;" />
+    </view>
+    <view class="selector-content">
+      <picker-view>
+        <picker bindchange="bindpickerChange" name="mypicker" mode="selector" value="{{index}}" range="{{array}}">
+          selector当前选择:{{array[index]}}
+        </picker>
+      </picker-view>
+      <picker-view>
+        <picker bindchange="bindtimechange" name="pickertime" mode="time" value="{{timeval}}">
+          time:{{timeval}}
+        </picker>
+      </picker-view>
+      <picker-view>
+        <picker bindchange="binddatechange" name="pickerdate" value="dateval" mode="date">
+          date:{{dateval}}
+        </picker>
+      </picker-view>
+    </view>
+    <view class="form-radio">
+      <radio-group>
+        <radio checked="checked">腹痛</radio>
+        <radio>心痛</radio>
+        <radio>头痛</radio>
+      </radio-group>
+    </view>
+    <view>
+      <slider name="slide" min="10" max="100" step="5" value="4" show-value="true"></slider>
+    </view>
+    <view>
+      <switch name="switch" type="switch" value="" checked>开关</switch>
+    </view>
+    <view>
+      <button type="primary" formType="submit">Submit</button>
+      <button formType="reset">Reset</button>
+    </view>
+    <view class="form-button">
+      <button type="primary" plain>button-primary</button>
+      <button type="primary" >button-primary</button>
+      <button type="default" plain>button-default</button>
+      <button type="default">button-default</button>
+      <button type="warn" plain>button-warn</button>
+      <button type="warn">button-warn</button>
+      <button type="default" class="loading-button" loading>加载中</button>
+    </view>
+  </form>
+</view>
