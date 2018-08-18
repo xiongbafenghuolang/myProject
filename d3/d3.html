@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+        // var width = 400,
+        //    height = 300;
+        
+        // var dataset = ['a','b','c'];
+        // //创建svg元素
+        // var svg = d3.select('body')
+        //     .append('svg')
+        //     .attr('width',width)
+        //     .attr('height',height)
+        //     .append('h1');
+
+        // svg.selectAll('text')
+        //    .data(dataset)
+        //    .enter()
+        //    .append('text')
+        //    .text('hello world')
+        //    .style('color','red');
+
+        var w = 400,h = 400;
+        var body = d3.select('body');   //选择 body元素
+        var data = [50,100,200,150];
+        var svg = body.append('svg');  //在body中插入svg 元素  画布
+        svg.selectAll('rect')  //选择svg 中的rect(svg 中提供的矩形标签) 元素
+            .data(data)   //绑定数据
+            .enter()     // 当 data.length > rect 的元素个时候用enter()。 update,exit()以后再说
+            .append('rect')  //补充data.length - rect.length 剩余的rect元素
+            .attr('x',20)      //上面说了SVG画布的坐标问题 x就是横向坐标的距离
+            .attr('y',function(d,i){  //Y 也一样 都是相对 (0,0)点
+                return 25 * i;
+            })
+            .attr('width',function(d,i){  // 设置矩形的宽度
+                return d;
+            })
+            .attr('height',function(d,i){   //设置柱子的高度
+                return 20;
+            })
+            .attr('fill','green');  //给柱子填充颜色
+    </script>
+
+</body>
+</html>
