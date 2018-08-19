@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于iframe的运用</title>
+    <style>
+        body,h3,div {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {text-decoration: none;}
+
+         html{
+            width:100%;
+            height:100%;
+        }
+
+        body {
+            width:100%;
+            height:100%;
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: column;
+        }
+
+        header {
+            height:44px;
+            line-height: 44px;
+            color: #ffffff;
+            background: #0cc440;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: row;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        nav span {
+            flex-grow: 1;
+            flex-shrink: 1;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .select {
+            border-bottom: 5px solid #0fc53c;
+            color: #0fc53c;
+        }
+
+        section {
+            flex: 1;
+            overflow:auto;
+        }
+
+        iframe {
+            width: 100%;
+            height: 800px;;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 42px;
+            line-height: 42px;
+            border-top: 1px solid #eaeaea;
+        }
+
+        footer div {
+            flex-grow: 1;
+            flex-shrink: 1;
+            text-align: center;
+        }
+
+        footer div:nth-child(2) {
+            border-left: 1px solid #eaeaea;
+            border-right: 1px solid #eaeaea;
+        }
+
+        footer div a {
+            display: block;
+            flex: 1;
+            color: #1a1a1a;
+        }
+
+        .checked {
+            color: #ffffff;
+            background: #0fc53c;
+        }
+    </style>
+</head>
+<body>
+    <header>关于iframe的学习</header>
+    <nav>
+        <span class="select" >iframe认识</span>
+        <span>iframe进阶</span>
+        <span>iframe加深</span>
+    </nav>
+    <section class="container">
+        <iframe  frameborder="0" id="viewer" name="viewer" ></iframe>
+        <div ></div>
+    </section>
+    <footer>
+        <div> <a class="checked" href="1.html" target="viewer">首页</a></div>
+        <div><a href="2.html" target="viewer">关于</a></div>
+        <div><a href="javascript:void(0)" target="">我的</a></div> 
+    </footer>
+
+    <script src="libs/jquery-1.11.3.js"></script>
+    <script>
+       $("nav span").on('click',function(){
+           $(this).addClass("select").siblings().removeClass("select");
+       })
+
+        $("footer div>a").on('click',function(){
+           $(this).addClass("checked").parent("div").siblings().find("a").removeClass("checked");
+       })
+    </script>
+</body>
+</html>

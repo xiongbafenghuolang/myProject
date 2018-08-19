@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>使用three.js创建立方体</title>
+    <style>
+         body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 引入three.js -->
+    <script src="libs/Three.js"></script>
+    <script>
+        // 当引入了three.js后，会得到一个全局的对象
+        // THREE
+
+        // 整个窗口为“舞台”大小
+        var width = window.innerWidth,
+            height = window.innerHeight;
+
+        // 1. 创建“舞台”
+       var sence = new THREE.Scene();
+
+        // 2.创建摄像机
+        var camera = new THREE.PerspectiveCamera(50,width / height,0.1,800);
+
+        // 调整“摄像机”的位置
+        camera.position.x = 0;
+        camera.position.y = 0;
+        camera.position.z = 20;
+
+        //  让摄像机对准舞台
+        camera.lookAt(sence.position);
+
+        // 3.创建一个渲染器
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(width,height);
+
+        document.body.appendChild(renderer.domElement);
+
+
+        //  演员登场
+
+
+        //  创建立方体
+        var box = new THREE.BoxGeometry(4,4,4);
+        
+        //  “化妆”
+        var materials = [
+            new THREE.MeshBasicMaterial({color:'blue'}),
+            new THREE.MeshBasicMaterial({color:'red'}),
+            new THREE.MeshBasicMaterial({color:'pink'}),
+            new THREE.MeshBasicMaterial({color:'green'}),
+            new THREE.MeshBasicMaterial({color:'yellow'}),
+            new THREE.MeshBasicMaterial({color:'orange'}),
+        ]
+    
+        var cube = new THREE.Mesh(box,materials);
+
+        // 添加到舞台上
+        sence.add(cube);
+
+        //  开始录像
+        render(); 
+        // cube.rotation.y = 0.3;
+        // cube.rotation.x = 0.3
+        
+        // renderer.render(sence,camera);
+        
+        function render() {
+            renderer.render(sence,camera);
+
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+            cube.rotation.z += 0.01;
+
+            requestAnimationFrame(render);
+        }
+
+
+        
+    </script>
+</body>
+</html>
