@@ -11,7 +11,7 @@
 .bg {
   min-height:160rpx;
   padding-top: 10rpx;
-  background-color: #1B82D2;
+  background-color: #4185e6;
 }
 
 .region {
