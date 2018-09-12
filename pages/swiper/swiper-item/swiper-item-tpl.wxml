@@ -1,0 +1,16 @@
+ <template name="swiperTemplate"> 
+  <view class="swiper-container">
+    <view class="swiper-author-date">
+        <image src="{{avatar}}"></image>
+    </view>
+    <view>
+      <view>
+        <text class="swiper-title">{{title}}</text>
+        <text class="swiper-date">{{date}}</text>
+      </view>
+      <view>
+      <text>{{content}}</text>
+      </view>
+    </view>
+  </view>
+ </template> 

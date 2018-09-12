@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mydocList/mydocList",
+    "pages/api/api",
+    "pages/page/wxml/wxml",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/scrollview/scrollview",
+    "pages/swiper/swiper",
+    "pages/icon/icon",
+    "pages/audio/audio",
+    "pages/video/video",
+    "pages/image/image",
+    "pages/page/wxss/wxss",
+    "pages/page/toast/toast",
+    "pages/chat/chat",
+    "pages/tab/tab",
+    "pages/mydocList/mydocInto/mydocInto",
+    "pages/mydocList/mydocInto/goodAtManagement/goodAtManagement",
+    "pages/mydocList/mydocInto/docIntoDetail/docIntoDetail",
+    "pages/myaudio/maudio",
+    "pages/lookImg/lookImg",
+    "pages/mytab/mytab",
+    "pages/accordion/accordion",
+    "pages/bottomMenue/bottomMenue",
+    "pages/page/jiugonggeNav/jiugonggeNav",
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "我的小程序",
+    "navigationBarTextStyle": "#fff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#56abe4",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/page/jiugonggeNav/jiugonggeNav",
+        "text": "咨询大夫",
+        "iconPath": "images/latest.png",
+        "selectedIconPath": "images/latest_on.png"
+      },
+      {
+        "pagePath": "pages/page/toast/toast",
+        "text": "界面",
+        "iconPath": "images/hotest.png",
+        "selectedIconPath": "images/hotest_on.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/hotest.png",
+        "selectedIconPath": "images/hotest_on.png"
+      },
+      {
+        "pagePath": "pages/api/api",
+        "text": "api",
+        "iconPath": "images/hotest.png",
+        "selectedIconPath": "images/hotest_on.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 3000,
+    "uploadFile": 3000,
+    "downloadFile": 3000
+  },
+  "debug": true
+}

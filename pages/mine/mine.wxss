@@ -1,0 +1,31 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 8rpx;
+  box-sizing: border-box;
+} 
+.btn-container{
+  position: fixed;
+  left: 0;
+  bottom: 10rpx;
+  width: 92%;
+  padding: 0 4%;
+}
+button {
+  margin-top: 20rpx;
+  font-size: 14px;
+}
+.light-checked {
+    color: #fff!important;
+    background: #1aad19!important;
+  }
+.light-nochecked {
+  color: #000!important;
+  background: #f8f8f8!important;
+}
+.color{
+  color: #f00;
+}

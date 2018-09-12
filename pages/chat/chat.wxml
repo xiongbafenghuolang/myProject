@@ -1,0 +1,31 @@
+<!--pages/chat/chat.wxml-->
+<view class="chat-content-outer">
+  <view class="chat-content-inner" catchtap="clickContentBox"></view>
+  <view class="chat-input-footer">
+    <!-- 聊天内容输入框 -->
+    <view class="chat-send-box">
+      <view class="input-item">
+      <textarea class="input keyboard-input" maxlength="500" bindinput="bindChatInput" bindconfirm="submiContent" bindfocus="bindChatFocus" bindblur="bindChatBlur" placeholder-class="placeholder-style"  auto-height show-confirm-bar="{{false}}" adjust-position="{{true}}"  value="{{keyboardInputValue}}" />
+      </view>
+      <image class="chat-icon add-icon" catchtap="clickMore" hidden="{{moreBtnFlag}}" src="/images/send_more.png" />
+      <view class="send-btn" hidden="{{sendBtnFlag}}"  catchtap="submiContent">发送</view>
+    </view>
+    <view class="send-more-box" hidden="{{sendMoreMsgFlag}}">
+      <!-- 选择图片和拍照的按钮 -->
+      <view class="send-more-btns-main">
+        <view class="more-btn-item" catchtap="chooseImage" data-category="album">
+          <view class="more-btn-main">
+            <image src="/images/wx_app_upload_image.png"></image>
+          </view>
+          <text>照片</text>
+        </view>
+        <view class="more-btn-item" catchtap="chooseImage" data-category="camera">
+          <view class="more-btn-main">
+            <image src="/images/wx_app_camera.png"></image>
+          </view>
+          <text>拍照</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,77 @@
+/* pages/page/jiugonggeNav/jiugonggeNav.wxss */
+@import "../../../css/iconfont.wxss";
+@font-face {
+  font-family: 'iconfont';  /* project id 807040 */
+  src: url('//at.alicdn.com/t/font_807040_kwgsc5robo.eot');
+  src: url('//at.alicdn.com/t/font_807040_kwgsc5robo.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_807040_kwgsc5robo.woff') format('woff'),
+  url('//at.alicdn.com/t/font_807040_kwgsc5robo.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_807040_kwgsc5robo.svg#iconfont') format('svg');
+}
+.bg {
+  min-height:160rpx;
+  padding-top: 10rpx;
+  background-color: #1B82D2;
+}
+
+.region {
+  display: flex;
+  flex:row;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  margin-left: 20rpx;
+  border-radius: 20rpx;
+  color: #ffffff;
+  font-size: 20rpx;
+  background-color: #1873B9;
+}
+
+.left {
+  width: 90%;
+  margin-left: 20rpx;
+}
+
+.right {
+  width:10%;
+  text-align: center;
+}
+
+.account {
+  width: 15%;
+  text-align: center;
+}
+
+.plus {
+  width: 15%;
+  text-align: center;
+}
+
+.nav {
+  text-align: left;
+  padding-bottom: 20rpx;
+}
+
+.item {
+  margin-top: 30rpx;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  font-size: 26rpx;
+  width: 24%;
+  display:inline-block;
+}
+
+.hr {
+  height: 2rpx;
+  margin-top: 20rpx;
+  background-color: #ccc;
+  opacity: 0.2;
+}
+
+.name {
+  font-size: 24rpx;
+}

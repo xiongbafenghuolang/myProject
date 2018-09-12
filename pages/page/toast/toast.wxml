@@ -1,0 +1,15 @@
+<!--pages/page/toast/toast.wxml-->
+<view class="toast-container">
+  <text class="topic-group">界面</text>
+  <view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>
+  <button bindtap="showToast" type="primary">获取消息提示框</button>
+  <button bindtap="showModal" type="primary">模态弹窗</button>
+  <button bindtap="hideLoading" type="primary">隐藏loading</button>
+  <button bindtap="showActionSheet" type="primary">操作菜单</button>
+  <button bindtap="setNavigationBarTitle" type="primary">设置导航条</button>
+  <button bindtap="showNavigationBarLoading" type="primary">显示导航条动画</button>
+  <button bindtap="hideNavigationBarLoading" type="primary">隐藏导航条动画</button>
+  <button bindtap="showAnimationPage" type="primary">动画</button>
+  <button bindtap="showAnimation" type="primary">自定义动画</button>
+  
+</view>

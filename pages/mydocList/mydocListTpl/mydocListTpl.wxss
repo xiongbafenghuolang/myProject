@@ -1,0 +1,117 @@
+/* 客服模板样式 */
+.custom {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 30rpx 0 30rpx 30rpx;
+  background: #FFFFFF;
+}
+.custom-left {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.custom-img image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.custom-info text {
+  display: block;
+  line-height: 50rpx;
+}
+.custom-name {
+  font-size: 32rpx;
+  color: #1D2024;
+}
+.custom-time {
+  font-size: 24rpx;
+  color: #B1B1B1;
+}
+.consultCustom {
+  text-align: center;
+  padding: 0 20rpx;
+}
+.consultCustom image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.consultCustom view {
+  font-size: 30rpx;
+}
+/* 大夫列表模板css样式 */
+.myDocList-content {
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.myDocList-mainInfo,.myDocList-mainInfo-left{
+  display: flex;
+  flex-direction: row;
+}
+.myDocList-mainInfo-left {
+  flex: 1;
+}
+.myDocList-mainInfo-left image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  border:1px solid #4185E6;
+}
+.myDocList-mainInfo-left .doc-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.myDocList-mainInfo .immediate-consultation {
+   border: 1px solid #4185E6;
+   width: 150rpx;
+   height: 60rpx;
+   margin-left: 20rpx;
+   line-height: 60rpx;
+   text-align: center;
+   font-size: 32rpx;
+   color: #4185E6;
+   vertical-align: middle;
+   border-radius: 10rpx;
+}
+.mainInfo-name-profess {
+  display: flex;
+  flex-direction: row;
+}
+.profess {
+  padding: 3rpx 15rpx;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  color: #fff;
+  border-radius: 20rpx;
+  background: #4185E6;
+}
+.doc-address {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.myDocList-otherInfo {
+  padding-left: 35rpx;
+  margin-top: 10rpx;
+}
+.myDocList-otherInfo view {
+  line-height: 60rpx;
+}
+.immediate-consultation {
+  position: relative;
+}
+.unread-message{
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  right: -10rpx;
+  top: -10rpx;
+  border-radius: 50%;
+  background: #ff0000;
+}

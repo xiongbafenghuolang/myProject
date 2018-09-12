@@ -1,0 +1,34 @@
+<!--pages/audio/audio.wxml-->
+<view class="container">
+  <audio id="myaudio" poster="{{poster}}" author="{{author}}" name="{{name}}" src="{{src}}" action="{{action}}" controls loop ></audio>
+  <view class="button-wrap">
+    <button type="primary" bindtap="audioPlay">播放</button>
+  </view>
+  <view class="button-wrap">
+    <button type="default" bindtap="audioPlay1">播放</button>
+  </view>
+  <view class="button-wrap">
+    <button type="primary" bindtap="audioPause">暂停</button>
+  </view>
+   <view class="button-wrap">
+    <button type="default" bindtap="audioPause1">暂停</button>
+  </view>
+  <view class="button-wrap">
+    <button type="primary" bindtap="audioBackOne">调为2倍速</button>
+  </view>
+  <view class="button-wrap">
+    <button type="primary" bindtap="audioBackTwo">调为1倍速</button>
+  </view>
+  <view class="button-wrap">
+    <button type="primary" bindtap="audioBackThr">调为0.5倍速</button>
+  </view>
+  <view class="button-wrap">
+    <button type="primary" bindtap="audio14">设置当前时间为14秒</button>
+  </view>
+  <view class="button-wrap">
+    <button type="primary" bindtap="audioStart">回到开头</button>
+  </view>
+  <view class="button-wrap">
+    <button type="default" bindtap="audioStart1">回到开头</button>
+  </view>
+</view>

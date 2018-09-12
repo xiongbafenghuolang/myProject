@@ -1,0 +1,21 @@
+/* pages/mydocList/mydocInto/docIntoDetail/docIntoDetail.wxss */
+.info-banner{
+	width: 750rpx;
+}
+.info-banner image{
+	width: 750rpx;
+  height: 120rpx;
+}
+.infotext-content{
+	position: relative;
+	padding: 60rpx 70rpx;
+	font-size: 30rpx;
+}
+.infotext-content view{
+	text-indent: 6orpx;
+	font-size: 30rpx;
+}
+.infotext-content .spanImg{
+	position: absolute;
+	right: 70rpx;
+}

@@ -1,0 +1,13 @@
+<!--pages/mydocList/mydocList.wxml-->
+<import src="mydocListTpl/mydocListTpl.wxml" />
+  <loading hidden="{{loadingHidden}}">  
+    加载中...  
+  </loading> 
+<view class="myDocList-body">
+  <template is="custom" ></template>
+  <view hidden="{{unreadHidden}}">{{unreadHidden}}</view>
+  <block wx:for="{{docList}}" wx:for-item="item" wx:for-index="idx">
+    <template is="myDocList" data="{{...item}}"></template>
+  </block>
+</view>
+

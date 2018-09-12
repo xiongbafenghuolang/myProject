@@ -1,0 +1,41 @@
+<!-- 大夫简介界面出诊信息模板 -->
+<template name="vivistInfo">
+  <view class="info-list-content">
+    <view class="hos-name">{{hospitalName}}</view>
+    <view class="hosAddress">
+      <text>地址:</text>
+      <text>{{hospitalAddress}}</text>
+    </view>
+    <view class="visit-info-content">
+      <view class="table">
+        <view class="tr bg-title">日程表</view>
+        <view class="tr">
+          <view class="th">
+            <view class="out">
+              <text class="line"></text>
+            </view>
+          </view>
+          <view class="th">上午</view>
+          <view class="th ">下午</view>
+        </view>
+        <block wx:for="{{showDocScheduling}}" wx:for-item="item" wx:key="item">
+          <view class="tr">
+            <view wx:if="{{item.workday==1}}" class="td">周一</view>
+            <view wx:elif="{{item.workday==2}}" class="td">周二</view>
+            <view wx:elif="{{item.workday==3}}" class="td">周三</view>
+            <view wx:elif="{{item.workday==4}}" class="td">周四</view>
+            <view wx:elif="{{item.workday==5}}" class="td">周五</view>
+            <view wx:elif="{{item.workday==6}}" class="td">周六</view>
+            <view wx:elif="{{item.workday==7}}" class="td">周日</view>
+            <view class="td">
+              <image wx:if="{{item.dayam==1}}" mode="aspectFill" src="/images/myDoc/chuzhen.png"></image>
+            </view>
+            <view class="td">
+              <image wx:if="{{item.daypm==1}}" mode="aspectFill" src="/images/myDoc/chuzhen.png"></image>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</template>

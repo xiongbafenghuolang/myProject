@@ -1,0 +1,11 @@
+/* pages/lookImg/lookImg.wxss */
+.previewimg{  
+    float:left;  
+    width:45%;  
+    height:200px;  
+    margin:2%;  
+}  
+.previewimg image{  
+    width:100%;  
+    height:100%;  
+}

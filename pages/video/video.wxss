@@ -1,0 +1,6 @@
+/* pages/video/video.wxss */
+@import "../../wxss/weui.wxss";
+
+.video-container{padding: 10px;}
+.video-container video{width: 100%;}
+.btn-area button{margin: 10px 0;}

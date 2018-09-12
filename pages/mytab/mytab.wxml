@@ -1,0 +1,25 @@
+<!--pages/mytab/mytab.wxml-->
+<view class="content" >
+  <view class="type" >
+    <view class="{{currentTab==0?'select':'default'}}" data-current="0" bindtap="switchNav" >新鲜果蔬</view>
+    <view class="{{currentTab==1?'select':'default'}}" data-current="1" bindtap="switchNav"  >零食饮品</view>
+     <view class="{{currentTab==2?'select':'default'}}" data-current="2" bindtap="switchNav"  >服装饰品</view>
+  </view>
+  <swiper current="{{currentTab}}" style="height:1500px;" bindchange="bindChange" >
+    <swiper-item>
+      <view class="items">
+        <view class="item" >新鲜果蔬1111111</view>
+      </view>
+    </swiper-item>
+     <swiper-item>
+      <view class="items">
+        <view class="item">零食饮品2222222</view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="items">
+        <view class="item">服装饰品3333333</view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

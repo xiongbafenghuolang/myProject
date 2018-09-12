@@ -1,0 +1,26 @@
+<view class="container">
+  <text style="color:{{color}}">
+      Hello wechat 我的界面{{array[1].msg}}
+  </text>
+  <text>{{mytest}}</text>
+  <text wx:if="{{true}}">{{mytitle}}</text>
+</view>
+<view style='text-align:right;padding-right:10rpx;'>
+  <text>{{looknum2.num}}</text>
+</view>
+<template name="staffName">
+  <view>
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+</template>
+
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+<view>
+  <navigator url="../logs/logs" >切换到首页Tab</navigator>
+</view>
+<view class="btn-container">
+  <button type="default" bindtap='anyfunction' hover-class="light-checked">测试</button>
+  <button type="primary" bindtap="myfunction" hover-class="light-nochecked">点击</button>
+</view>

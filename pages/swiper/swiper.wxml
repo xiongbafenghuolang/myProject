@@ -1,0 +1,32 @@
+<!--pages/swiper/swiper.wxml-->
+ <import src="swiper-item/swiper-item-tpl.wxml" /> 
+<view class="swiper-content">
+  <swiper class="swiper-img" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" indicator-color="white" indicator-active-color="red" interval="{{interval}}" circular="{{circular}}" vertical="{{true}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="swiper-btn">
+    <button type="primary" bindtap="changeIndicatorDots">indicator-dots</button>
+    <button type="primary" bindtap="changeAutoplay">autoplay</button>
+  </view>
+  <view class="swiper-slide">
+    <slider bindchange="changeIterval" show-value min="500" max="2000" />interval
+    <slider bindchange="changeDuration" show-value min="1000" max="10000" />duration
+  </view>
+
+  <view class="image-content">
+    <image src="/images/houlai.jpeg" mode="aspectFill"></image>
+  </view>
+
+  <view catchtap="onTapJump" class="journey-container">
+
+  </view>
+  <block wx:for="{{swiperList}}" wx:for-item="item" wx:for-index="idex">
+     <template is="swiperTemplate" data="{{...item}}"></template> 
+    <!-- <include src="swiper-item/swiper-item-tpl.wxml"/> -->
+  </block>
+</view>

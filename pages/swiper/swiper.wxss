@@ -1,0 +1,23 @@
+/* pages/swiper/swiper.wxss */
+@import "swiper-item/swiper-item-tpl.wxss";
+.swiper-content {padding: 20rpx;}
+.swiper-img image{
+  width: 100%;
+  height: 100%;
+}
+.swiper-btn button{margin-top:10px;}
+.image-content {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ff0000;
+}
+.image-content image {
+  width: 100%;
+  height: 200px;
+}
+.journey-container {
+  width: 700rpx;
+  height: 60rpx;
+  margin-top:20rpx;
+  border: 1px solid #ff0000;
+}

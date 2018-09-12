@@ -1,0 +1,15 @@
+<!--pages/wxss/wxss.wxml-->
+<view class="container-list">
+  <view class="list-item" wx:for="{{dataList}}">
+    <image class="list-item-left" src="{{item.headImg}}"/>
+    <view class="list-item-right">
+      <view class="title">
+        <text class="name">{{item.name}}</text>
+        <text class="disc">{{item.disc}}</text>
+      </view>
+      <view class="time">
+        {{item.time}}
+      </view>
+    </view>
+  </view>
+</view>

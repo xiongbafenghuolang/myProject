@@ -1,0 +1,68 @@
+<!--pages/page/jiugonggeNav/jiugonggeNav.wxml-->
+<view class="bg" >
+  <view class="region" >
+    <view class="search" >
+      <view class="left" >
+        <text class='iconfont icon-sousuo' style='color:#ffffff;font-size:40rpx;'></text>
+        热门电影：神偷奶爸3
+      </view>
+      <view class="right" ></view>
+    </view>
+    <view class="account" >
+      <text class='iconfont icon-weibiaoti-' style='color:#ffffff;font-size:40rpx;'></text>
+    </view>
+    <view class="plus" >
+      <text class='iconfont icon-mui-icon-add' style='color:#ffffff;font-size:40rpx;'></text>
+    </view>
+  </view>
+  <view class="nav" >
+    <view class="item" bindtap="navBtn" >
+      <view>
+        <text class="iconfont icon-552dc065f0478" style='color:#ffffff;font-size:58rpx;' ></text>
+      </view>
+      <view style="color:#ffffff;" >
+      扫一扫
+      </view>
+    </view>
+    <view class="item" bindtap="navBtn" >
+      <view>
+        <text class="iconfont icon-fuqian" style='color:#ffffff;font-size:58rpx;' ></text>
+      </view>
+      <view style="color:#ffffff;" >
+      付钱
+      </view>
+    </view>
+    <view class="item" bindtap="navBtn" >
+      <view>
+        <text class="iconfont icon-shouqian" style='color:#ffffff;font-size:58rpx;' ></text>
+      </view>
+      <view style="color:#ffffff;" >
+      收钱
+      </view>
+    </view>
+    <view class="item" bindtap="navBtn" >
+      <view>
+        <text class="iconfont icon-qiabao" style='color:#ffffff;font-size:58rpx;' ></text>
+      </view>
+      <view style="color:#ffffff;" >
+      卡包
+      </view>
+    </view>
+  </view>
+</view>
+  <view class="nav" >
+    <block wx:for="{{navs}}" wx:for-item="item"  wx:key="*this" >
+      <view class="item" bindtap="navBtn" id="{{index}}" >
+        <view>
+          <text class="iconfont {{item.img}}" style="width:{{item.width}}rpx;height:{{item.height}}rpx;color:{{item.color}}; font-size:{{item.size}}rpx;" ></text>
+        </view>
+        <view class="name" >
+          {{item.name}}
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="hr" ></view>
+
+
+

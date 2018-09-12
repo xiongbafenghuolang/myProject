@@ -1,0 +1,17 @@
+<!--pages/mydocList/mydocInto/goodAtManagement/goodAtManagement.wxml-->
+<view class="info-banner">
+  <image src="/images/myDoc/brzyBananer.png" />
+</view>
+<view class="infotext-content">
+  <view wx:if="{{goodatManage}}">
+    <text>专业特长：</text>
+    {{goodatManage}}
+  </view>
+  <view wx:else>
+    <text>专业特长：</text>
+    大夫暂无设置专长
+  </view>
+  <text class="spanImg">
+    <image src="/images/myDoc/infotext.png" />
+  </text>
+</view>

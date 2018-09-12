@@ -1,0 +1,53 @@
+<!--pages/mydocList/mydocInto/mydocInto.wxml-->
+<import src="mydocIntoTpl/mydocIntoTpl.wxml" />
+<view class="docInto-container">
+  <view class="docInto-top">
+    <view>
+      <image src="{{docIntoData.pddr.handleUrl}}"></image>
+    </view>
+    <view>
+      <view>
+        <text class="docName">{{docIntoData.pddr.name}}</text>
+        <text class="profess">{{docIntoData.title}}</text>
+      </view>
+       <view class="address">{{docIntoData.addressAC}}</view> 
+    </view>
+    <view class="consultDoc" style="float:right;">咨询大夫</view> 
+  </view>
+  <view class="docInto-content">
+    <view class="doc-skill-into" bindtap="goodAtManagement" data-excel="{{docIntoData.excel}}"> 
+      <image class="doc-skill-img" src="/images/myDoc/attending.png"></image>
+      <view class="doc-skill-into-content">
+        <view>擅长主治</view>
+        <view class="doc-skill" wx:if="{{docIntoData.excel}}">{{docIntoData.excel}}</view>
+        <view class="doc-skill" wx:else>暂无擅长主治</view>
+      </view>
+      <image class="doc-skill-into-more" src="/images/myDoc/doc_more.png"></image>
+    </view>
+    <view class="doc-skill-into" bindtap="docIntoFun" data-ysjj="{{docIntoData.ysjj}}"> 
+    <image class="doc-skill-img" src="/images/myDoc/brief.png"></image>
+      <view class="doc-skill-into-content">
+        <view>大夫简介</view>
+        <view class="doc-into" wx:if="{{docIntoData.ysjj}}">{{docIntoData.ysjj}}</view>
+        <view class="doc-into" wx:else>暂无大夫简介</view>
+      </view>
+      <image class="doc-skill-into-more" src="/images/myDoc/doc_more.png"></image>
+    </view>
+  </view>  
+  <view class="doc-vivist-info">
+    <view class="vivist-info-title">
+     <image class="vivist-info-img" src="/images/myDoc/info.png"></image>
+      <text>出诊信息</text>
+    </view>
+    <view class="vivist-info-list">
+      <!-- 出诊信息列表部分开始 -->
+      <view wx:if="{{docIntoData.setSche=='' || docIntoData.setSche==null}}" class="no-vivist-info">大夫暂未设置出诊信息</view>
+      <view wx:else >
+        <block wx:for="{{docIntoData.setSche}}" wx:for-item="item" wx:for-index="idx" wx:key="item" >
+          <template is="vivistInfo" data="{{...item}}"></template>
+        </block>
+      </view>
+      <!-- 出诊信息列表部分结束 -->
+    </view>
+  </view>
+</view>

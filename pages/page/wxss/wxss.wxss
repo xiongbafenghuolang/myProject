@@ -1,0 +1,44 @@
+/* pages/wxss/wxss.wxss */
+.container-list {
+  padding-top: 20rpx;
+}
+.list-item {
+  width: 710rpx;
+  min-height: 100rpx;
+  padding: 10.0rpx 20.0rpx;
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  flex-direction: row;
+}
+.list-item-left {
+  width: 100rpx;
+  height: 100rpx;
+}
+.list-item-right {
+  width: 590rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+.title {
+  min-height: 100rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.time {
+  width: 150rpx;
+  min-height: 100rpx;
+  font-size: 25rpx;
+  color: #999;
+}
+.name {
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+.disc {
+  font-size: 25rpx;
+  color: #ccc;
+}

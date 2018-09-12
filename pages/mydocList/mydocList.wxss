@@ -1,0 +1,5 @@
+/* pages/mydocList/mydocList.wxss */
+@import "mydocListTpl/mydocListTpl.wxss";
+page{
+  background-color: #f6f6f6;
+}

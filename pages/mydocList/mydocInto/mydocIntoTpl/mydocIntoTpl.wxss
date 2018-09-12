@@ -1,0 +1,97 @@
+/* 大夫简介界面出诊信息模板样式 */
+.info-list-content {
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+  font-size: 30rpx;
+  border-top: 1px solid #EAEAEA;
+}
+.hos-name {
+  line-height: 60rpx;
+  padding-top: 20rpx;
+}
+.hosAddress {
+  color: #B1B1B1;
+  display: flex;
+  align-content: center;
+  flex-flow: row nowrap;
+}
+.hosAddress text:nth-child(2) {
+  padding-left: 10rpx;
+  flex: 1;
+  word-break: break-all;
+}
+.visit-info-content {
+  margin-top: 20rpx;
+}
+.table {
+  border: 0px solid darkgray;
+  border-left: 1px solid #eaeaea;
+}
+.table .bg-title {
+  line-height: 80rpx;
+  color: #fff;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  background: #4185e6;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+}
+.tr:nth-child(2){
+  background-color: #F6F6F6;
+}
+.td {
+  width:42%;
+  height: 80rpx;
+  line-height: 80rpx;
+  justify-content: center;
+  text-align: center;
+  border-left: 1px solid #eaeaea;
+  vertical-align: middle;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.th {
+  width: 42%;
+  height: 80rpx;
+  line-height: 80rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #eaeaea;
+}
+.tr>.th:nth-child(1),.tr>.td:nth-child(1) {
+  width: 16%;
+  border-left: 0;
+  background-color: #F6F6F6;
+}
+.tr>.th:nth-last-child(1),.tr>.td:nth-last-child(1){
+  border-right: 1px solid #eaeaea;
+}
+.td image {
+  width: 120rpx;
+  height: 45rpx;
+}
+.out {
+  width: 0px;
+  height: 0px;
+  position: relative;
+}
+.out text.line {
+  display: block;
+  width: 135rpx;
+  height: 1px;
+  background: #EAEAEA;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  transform: rotate(35deg);
+  position: absolute;
+  top: 0px;
+  left: -70rpx;
+}

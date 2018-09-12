@@ -1,0 +1,11 @@
+<!--pages/mydocList/mydocInto/docIntoDetail/docIntoDetail.wxml-->
+<view class="info-banner">
+  <image src="/images/myDoc/brzyBananer.png" />
+</view>
+<view class="infotext-content">
+  <view wx:if="{{docInto}}">{{docInto}}</view>
+  <view wx:else>大夫暂无设置简介详情</view>
+  <text class="spanImg">
+    <image src="/images/myDoc/infotext.png" />
+  </text>
+</view>

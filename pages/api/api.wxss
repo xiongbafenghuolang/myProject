@@ -1,0 +1,21 @@
+/* pages/api/api.wxss */
+.container {padding: 20rpx;}
+.api-group {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: gainsboro;
+  padding: 0 10rpx;
+  margin: 20rpx 0;
+}
+button {
+  width: 100%;
+  margin-top: 15rpx;
+}
+.image-style{
+  width: 500rpx;
+  height:300rpx;
+  margin-bottom: 10rpx;
+  background: #eee;
+}
+.location,.system{width: 100%;}

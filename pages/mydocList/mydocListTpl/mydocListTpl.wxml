@@ -1,0 +1,38 @@
+<!-- 我的大夫界面大夫列表模板 -->
+<template name="custom">
+  <view class="custom">
+    <view class="custom-left">
+      <view class="custom-img">
+        <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2514093810,3332308834&fm=27&gp=0.jpg"></image>
+      </view>
+      <view class="custom-info">
+        <text class="custom-name">小然客服</text>
+        <text class="custom-time">周一到周六(9:00-18:00)</text>
+      </view>
+    </view>
+    <view class="consultCustom" bindtap="consultCustom">
+      <image src="/images/myDoc/xonsultDoc.png"></image>
+      <view>咨询客服</view>
+    </view>
+  </view>
+</template>
+<template name="myDocList">
+  <view class="myDocList-content">
+    <view class="myDocList-mainInfo">
+      <view catchtap="onTapDocInto" data-doc-id="{{id}}" class="myDocList-mainInfo-left">
+        <image wx:if="{{headImageUrl}}" src="http://devapi.brzhongyi.cn:8082/filestore/images/{{headImageUrl}}"></image>
+        <view class="doc-center">
+          <view class="doc-name-profess">
+            <text class="docName">{{name}}</text>
+            <text class="profess">{{title}}</text>
+          </view>
+          <view class="doc-address">{{address}}</view>
+        </view>
+      </view>
+      <view bindtap="immediateConsult" data-doc-id="{{id}}" class="immediate-consultation">
+        立即咨询
+        <view wx:if="{{status}}" class="unread-message"></view>
+      </view>
+    </view>
+  </view>
+</template>

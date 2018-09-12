@@ -1,0 +1,25 @@
+<text style="color:red;">我不包含在template中</text>
+<template name="myitem">
+  <text style="color:gold;">{{text}}</text>
+</template>
+<template name="objectCombine1">
+  <view>
+    <text>{{for}}</text>
+    <text>{{bar}}</text>
+  </view>
+</template>
+  <template name="objectCombine2">
+  <view>
+    <text>{{a}}</text>
+    <text>{{b}}</text>
+    <text>{{c}}</text>
+    <text>{{d}}</text>
+    <text>{{e}}</text>
+  </view>
+</template>
+<template name="objectCombine3">
+  <view>
+    <text>{{for}}</text>
+    <text>{{bar}}</text>
+  </view>
+</template>

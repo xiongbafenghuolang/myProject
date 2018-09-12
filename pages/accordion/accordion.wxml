@@ -1,0 +1,55 @@
+<!--pages/accordion/accordion.wxml-->
+<view class="accordion-container" >
+  <view class="left-nav" >
+    <view class="{{currentTab==0?'select':'normal'}}" id="0" bindtap="switchNav" >水果蔬菜</view>
+    <view class="{{currentTab==1?'select':'normal'}}" id="1" bindtap="switchNav" >肉禽蛋奶</view>
+    <view class="{{currentTab==2?'select':'normal'}}" id="2" bindtap="switchNav" >冷热速食</view>
+    <view class="{{currentTab==3?'select':'normal'}}" id="3" bindtap="switchNav" >休闲食品</view>
+    <view class="{{currentTab==4?'select':'normal'}}" id="4" bindtap="switchNav" >酒水饮料</view>
+    <view class="{{currentTab==5?'select':'normal'}}" id="5" bindtap="switchNav" >粮油调味</view>
+    <view class="{{currentTab==6?'select':'normal'}}" id="6" bindtap="switchNav" >清洁日化</view>
+    <view class="{{currentTab==7?'select':'normal'}}" id="7" bindtap="switchNav" >家居用品</view>
+    <view class="{{currentTab==8?'select':'normal'}}" id="8" bindtap="switchNav" >鲜花蛋糕</view>
+    <view class="{{currentTab==9?'select':'normal'}}" id="9" bindtap="switchNav" >医疗健康</view>
+    <view class="{{currentTab==10?'select':'normal'}}" id='10' bindtap="switchNav" >其他</view>
+  </view>
+  <view class="right-content" >
+    <view>
+      <swiper current="{{currentTab}}" >
+        <swiper-item>
+          我是水果蔬菜内容
+        </swiper-item>
+        <swiper-item>
+          我是冷热速食内容
+        </swiper-item>
+        <swiper-item>
+          我是冷热速食内容
+        </swiper-item>
+        <swiper-item>
+          我是休闲食品内容
+        </swiper-item>
+        <swiper-item>
+          我是酒水饮料内容
+        </swiper-item>
+        <swiper-item>
+          我是粮油调味内容
+        </swiper-item>
+        <swiper-item>
+          我是清洁日化内容
+        </swiper-item>
+        <swiper-item>
+          我是家居用品内容
+        </swiper-item>
+        <swiper-item>
+          我是鲜花蛋糕内容
+        </swiper-item>
+        <swiper-item>
+          我是医疗健康内容
+        </swiper-item>
+        <swiper-item>
+          其他
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+</view>

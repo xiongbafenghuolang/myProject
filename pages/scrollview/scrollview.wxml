@@ -1,0 +1,33 @@
+<!--pages/scrollview/scrollview.wxml-->
+<view class="container-scrollview">
+  <view style="width:100%;">
+    <text>vertical scroll</text>
+    <scroll-view scroll-y class="scroll-view-y" bindscroll="scroll"  bindscrolltolower="lower" bindscrolltoupper="upper" scroll-top="{{scrollTop}}">
+      <view id="green" class="scroll-view-item bc-green"></view>
+      <view id="red" class="scroll-view-item bc-red"></view>
+      <view id="yellow" class="scroll-view-item bc-yellow"></view>
+      <view id="blue"class="scroll-view-item bc-blue"></view>
+    </scroll-view>
+  </view>
+  <view style="width:100%;margin-top:10px;">
+    <button type="primary" bindtap="toMove">滚动</button>
+  </view>
+  
+  <view>
+    <text>horizontal scroll</text>
+    <scroll-view scroll-x style="width:100%">
+      <view class="scroll-view-h">
+        <view class="scroll-view-item-h bc-green"></view>
+        <view class="scroll-view-item-h bc-red"></view>
+        <view class="scroll-view-item-h bc-yellow"></view>
+        <view class="scroll-view-item-h bc-blue"></view>
+      </view>
+    </scroll-view>
+  </view>
+  <scroll-view scroll-x class="scroll-header">
+    <view id="green" class="scroll-view-item-h1 bc-green"></view>
+    <view id="red" class="scroll-view-item-h1 bc-red"></view>
+    <view id="yellow" class="scroll-view-item-h1 bc-yellow"></view>
+    <view id="blue" class="scroll-view-item-h1 bc-blue"></view>
+  </scroll-view>
+</view>

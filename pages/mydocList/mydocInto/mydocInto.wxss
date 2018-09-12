@@ -1,0 +1,100 @@
+/* pages/mydocList/mydocInto/mydocInto.wxss */
+@import "mydocIntoTpl/mydocIntoTpl.wxss";
+
+page{
+  background-color: #f6f6f6;
+}
+.docInto-top {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 30rpx 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+.docInto-top image {
+  width: 85rpx;
+  height: 85rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  border:1px solid #4185E6;
+}
+.profess {
+  padding: 2rpx 8rpx;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  color: #fff;
+  border-radius: 20rpx;
+  background: #4185E6;
+}
+.address {
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  color: #999;
+}
+.consultDoc {
+  position: absolute;
+  right: 20rpx;
+  width: 130rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 10rpx;
+  border: 1px solid #4185e6;
+  border-radius: 10rpx;
+  color: #4185e6;
+}
+.docInto-content {
+  background: #fff;
+}
+.docInto-content>.doc-skill-into:nth-child(1){
+  border-bottom: 1px solid #eaeaea;
+}
+.doc-skill-into {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 20rpx;
+  vertical-align: middle;
+}
+.doc-skill-into-content {
+  width: 580rpx;
+}
+.doc-skill-into-content view:nth-child(1) {
+  padding-top: 10rpx;
+}
+.doc-skill-into .doc-skill-into-more {
+  width: 65rpx;
+  height: 65rpx;
+}
+.doc-skill,.doc-into {
+  margin-top: 10rpx;
+  color: #b1b1b1;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2; 
+}
+.doc-skill-img,.vivist-info-img {
+  width: 65rpx;
+  height:65rpx;
+}
+.doc-vivist-info {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background-color: #fff;
+}
+.vivist-info-title {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20rpx;
+}
+.vivist-info-title text{
+  line-height: 60rpx;
+}
+.no-vivist-info {
+  line-height: 100rpx;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  color: #B1B1B1;
+  border-top: 1px solid #eaeaea;
+}
