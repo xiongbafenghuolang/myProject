@@ -9,7 +9,7 @@
   url('//at.alicdn.com/t/font_807040_kwgsc5robo.svg#iconfont') format('svg');
 }
 .bg {
-  min-height:180rpx;
+  min-height:1800rpx;
   padding-top: 10rpx;
   background-color: #4185e6;
 }
