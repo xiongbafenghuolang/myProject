@@ -24,7 +24,7 @@
     "pages/mytab/mytab",
     "pages/accordion/accordion",
     "pages/bottomMenue/bottomMenue",
-    "pages/page/jiugonggeNav/jiugonggeNav",
+    "pages/page/jiugonggeNav/jiugonggeNav"
   ],
   "window": {
     "backgroundTextStyle": "light",
